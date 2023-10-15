@@ -12,6 +12,8 @@ import java.util.List;
 // <> significa que a classe recebe um generator. Generator são atributos dinâmicos 
 // primeiro parâmetro: qual a classe que esse repo está representando 
 // segundo parâmetro: qual tipo de ID que a entity tem
+
+// estamos usando o JPA repository para fazer comando SQL no banco de dados 
 public interface IUserRepository extends JpaRepository<UserModel, UUID> {
     UserModel findByUsername(String username);
 }
